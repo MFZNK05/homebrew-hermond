@@ -5,21 +5,21 @@
 class Hermond < Formula
   desc "Hermond – P2P File Sharing for Campus Networks"
   homepage "https://github.com/MFZNK05/DFS-Go"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MFZNK05/DFS-Go/releases/download/v0.1.3/hermond_0.1.3_darwin_amd64.tar.gz"
-      sha256 "406369e98614822ecf60d40f07a9f2dbb10394d095838b80584c8b956dbe0771"
+      url "https://github.com/MFZNK05/DFS-Go/releases/download/v0.1.4/hermond_0.1.4_darwin_amd64.tar.gz"
+      sha256 "aee616c1492595f4341cc4922650c24cb30b7c36f3e80ac8da828b99e41d0c78"
 
       define_method(:install) do
         bin.install "hermond"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MFZNK05/DFS-Go/releases/download/v0.1.3/hermond_0.1.3_darwin_arm64.tar.gz"
-      sha256 "daefee12f0cd900145c22eae68ac101f484a51edc976e4ba2d604effa412688a"
+      url "https://github.com/MFZNK05/DFS-Go/releases/download/v0.1.4/hermond_0.1.4_darwin_arm64.tar.gz"
+      sha256 "1acd3180e001f919893739ca9a514a9813163468a6200f70c8087a033ba4505f"
 
       define_method(:install) do
         bin.install "hermond"
@@ -29,15 +29,15 @@ class Hermond < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MFZNK05/DFS-Go/releases/download/v0.1.3/hermond_0.1.3_linux_amd64.tar.gz"
-      sha256 "134cccd4b2b46f2e92324210bdcdc1f6ca9619783b087bb3c77ceafe3c6590af"
+      url "https://github.com/MFZNK05/DFS-Go/releases/download/v0.1.4/hermond_0.1.4_linux_amd64.tar.gz"
+      sha256 "709b7f85ccd7ae12474ca2bf2aebcb4565f2387658cce29924a8ad39f7eac29c"
       define_method(:install) do
         bin.install "hermond"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MFZNK05/DFS-Go/releases/download/v0.1.3/hermond_0.1.3_linux_arm64.tar.gz"
-      sha256 "114234505cca73ee212b419b98b14882ae1fc8675ac7bc49a33701a2061696ee"
+      url "https://github.com/MFZNK05/DFS-Go/releases/download/v0.1.4/hermond_0.1.4_linux_arm64.tar.gz"
+      sha256 "23c03801eb8895439b2e4f585852ba0b16a11fe616da98a2b8f7785812a7b2e6"
       define_method(:install) do
         bin.install "hermond"
       end
