@@ -11,7 +11,7 @@ class Hermond < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/MFZNK05/DFS-Go/releases/download/v0.2.2/hermond_0.2.2_darwin_amd64.tar.gz"
-      sha256 "9d88d135a61f23318ea95d3136f19e8b2883ac0b0cb18146e1807cf1fd5ad316"
+      sha256 "4c9ec4a7d1933a89155a3ba30890cd104e3bdb692c3c35c2db667dd0702993c3"
 
       define_method(:install) do
         bin.install "hermond"
@@ -19,7 +19,7 @@ class Hermond < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/MFZNK05/DFS-Go/releases/download/v0.2.2/hermond_0.2.2_darwin_arm64.tar.gz"
-      sha256 "8cec595d36c1ec507e10fde92e7c9c0ca9178a30c35219d26956e61f49166289"
+      sha256 "e18d52968e5002a466b7af7fd99265f218bdd62eb23f7cead1a0ba4b02e5ba27"
 
       define_method(:install) do
         bin.install "hermond"
@@ -30,14 +30,14 @@ class Hermond < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/MFZNK05/DFS-Go/releases/download/v0.2.2/hermond_0.2.2_linux_amd64.tar.gz"
-      sha256 "71611b2bfc972f2c88c807770113fb9255ee495f368cce3c3724de6ff5a71c4b"
+      sha256 "c656a69b08cee87f09bb6eaffa1cfdb612171832cd16d8740d234c0410686f1b"
       define_method(:install) do
         bin.install "hermond"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/MFZNK05/DFS-Go/releases/download/v0.2.2/hermond_0.2.2_linux_arm64.tar.gz"
-      sha256 "2241828441a860bb5130512a25f408e62ec9d75981be22521fe1ec8fac09581e"
+      sha256 "2a45283d0ccd3ad38c07d976b936dc03751511f345c6c9ff4fc20a08799224b6"
       define_method(:install) do
         bin.install "hermond"
       end
